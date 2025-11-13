@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title><? STR(page->title) STR(" - ") STR(global.title) ?></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="<? STR(global.description) ?>">
+		<link rel="icon" type="image/png" href="<? STR(global.favicon_path) ?>"/>
+		<link rel="stylesheet" href="/asset/style.css">
+	</head>
+	<body>
+		<div class="wrapper">
+			<a href="/"><h1 class="home-title"><? STR(global.title) ?></h1></a>
+			<header>
+				<h1><? STR(page->title) ?></h1>
+				<div class="meta">
+					<? STR(page->date) STR("   ") ?>
+					<div class="tags">
+					<? STR(page->tags) ?>
+					</div>
+				</div>
+			</header>
+
+			<main class="content">
+				<? CONTENT() ?>
+			</main>
+			<? INCLUDE("footer") ?>
+		</div>
+	</body>
+</html>
+
+

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title><? STR(global.title) ?></title>
+		<meta property=      "og:title" content="<? STR(global.title) ?>"/>
+		<meta name=       "description" content="<? STR(global.description) ?>"/>
+		<meta property="og:description" content="<? STR(global.description) ?>"/>
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<link rel="icon" type="image/png" href="<? STR(global.favicon_path) ?>"/>
+		<link rel="stylesheet" href="/asset/style.css"/>
+
+		<link rel="alternate" type="application/rss+xml" title="<? STR(global.title) ?> rss feed" href="/rss.xml" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="container">
+				<a href="/"><h1 class="home-title"><? STR(global.title) ?></h1></a>
+			</header>
+
+			<main class="container">
+				<? CONTENT(); ?>
+			</main>
+
+			<? INCLUDE("footer"); ?>
+		</div>
+	</body>
+</html>
+
+
+
+
