@@ -22,6 +22,7 @@
 
 			<main class="container">
 				<? CONTENT(); ?>
+				<? INCLUDE("sidebar"); ?>
 			</main>
 
 			<? INCLUDE("footer"); ?>

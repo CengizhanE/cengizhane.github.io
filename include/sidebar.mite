@@ -9,18 +9,9 @@
         <hr class="hr-spacer">
 	<h3>Sidenotes</h3>
 	<div class="sidenote">
-		<a href="#">Learning about PE relocations, the hard way</a>
-		<div class="meta">October 25, 2023 — by aixxe</div>
-		<p>Fixing an almost year old bug and learning about PE relocations along the way.</p>
+		<a href="#">post?</a>
+		<div class="meta">October 25, 2023</div>
+		<p>description</p>
 	</div>
         <hr class="hr-spacer">
-	<h3>Categories</h3>
-	<div class="category">
-		<a href="#">Development</a>
-		<div class="desc">Rare for a post to not be in this category.</div>
-	</div>
-	<div class="category">
-		<a href="#">Gaming</a>
-		<div class="desc">Usually less technical posts about games.</div>
-	</div>
 </aside>

@@ -1,6 +1,11 @@
 ```c
-global.url   = "https://cengizhan.space";
-global.title = "cengizhan.space";
+/*
+./mite --serve
+http://localhost:8000/
+*/
+
+global.url   = "https://cengizhan.engineer";
+global.title = "cengizhan.engineer";
 global.description  = "İstikbal göklerdedir";
 
 
@@ -20,9 +25,6 @@ page->layout = "home";
 <? for (int i = 0; i < global.posts.count; i++) { ?>
 <?     SitePage* p = global.posts.items[i]; ?>
 <article>
-    <?/*
-    <img src="/post/mite/intro_template.png">
-    */?>
     <h2><a href="<? STR(p->url) ?>"><? STR(p->title) ?></a></h2>
     <div class="meta"><? STR(p->date) ?></div>
     <p><? STR(p->description) ?></p>
@@ -37,7 +39,5 @@ page->layout = "home";
 <? } ?>
 
 </section>
-
-<? INCLUDE("sidebar"); ?>
 
 
