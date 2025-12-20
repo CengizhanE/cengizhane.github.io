@@ -2,11 +2,8 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title><? STR(global.title) ?></title>
-		<meta property=      "og:title" content="<? STR(global.title) ?>"/>
-		<meta name=       "description" content="<? STR(global.description) ?>"/>
-		<meta property="og:description" content="<? STR(global.description) ?>"/>
-		<link rel="alternate" type="application/rss+xml" title="rss feed" href="/rss.xml" />
+		<title>another post title</title>
+		<meta property=      "og:title" content="another post title"/>
 		<style>
         /* ENGINEERING THEME - TECHNICAL DARK */
         :root {
@@ -59,16 +56,34 @@
         }
     </style>
 	</head>
-	<body class="home">
+	<body>
 		<div class="wrapper">
+			<nav class="site-nav">
+				<div class="nav-left">
+					<a href="/">cengizhan.engineer</a>
+				</div>
+			</nav>
+
+
 			<header>
-				<h1 class="home-title"><? STR(global.title) ?></h1>
-				<p class="intro"><? STR(global.description) ?></p>
+				<h1>another post title</h1>
+				<p class="date">2026-01-20</p>
+				<p class="tags">tag1 tag2 tag3</p>
 			</header>
 
-			<? CONTENT() ?>
+			<main class="content">
+<p>
+content <i>here</i>
+</p>
 
-			<? INCLUDE("footer") ?>
+			</main><footer>
+	<p>
+			<a href="https://github.com/user">github</a> |
+			<a href="https://bsky.app/profile/user">bluesky</a> |
+			<a href="https://linkedin.com/user">linkedin</a> |
+		<a href="/rss.xml">rss</a>
+	</p>
+</footer>
 		</div>
 	</body>
 </html>

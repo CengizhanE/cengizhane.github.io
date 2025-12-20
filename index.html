@@ -4,45 +4,82 @@
 		<meta charset="UTF-8">
 		<title>cengizhan.engineer</title>
 		<meta property=      "og:title" content="cengizhan.engineer"/>
-		<meta name=       "description" content="İstikbal göklerdedir"/>
-		<meta property="og:description" content="İstikbal göklerdedir"/>
+		<meta name=       "description" content="An Aerospace Engineer"/>
+		<meta property="og:description" content="An Aerospace Engineer"/>
+		<link rel="alternate" type="application/rss+xml" title="rss feed" href="/rss.xml" />
+		<style>
+        /* ENGINEERING THEME - TECHNICAL DARK */
+        :root {
+            --bg-color: #1a1b1e;       /* Deep Slate Grey (Like CAD software) */
+            --text-main: #e6e6e6;      /* Off-white for readability */
+            --text-muted: #a0a0a0;     /* Grey for less important text */
+            --accent: #4da6ff;         /* "Simulation Blue" */
+            --border: #333333;         /* Subtle borders */
+        }
 
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Segoe UI', Helvetica, Arial, sans-serif; /* Clean reading font */
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+        }
 
-		<link rel="icon" type="image/png" href=""/>
-		<link rel="stylesheet" href="/asset/style.css"/>
+        /* The container that centers everything */
+        .wrapper {
+            max-width: 800px;     /* Not too wide, like a paper document */
+            margin: 0 auto;       /* Centers it */
+            padding: 40px 20px;
+        }
 
-		<link rel="alternate" type="application/rss+xml" title="cengizhan.engineer rss feed" href="/rss.xml" />
+        /* The Main Title - Uses a "Code" font for engineering feel */
+        .home-title {
+            font-family: 'Consolas', 'Courier New', monospace;
+            color: var(--accent);
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+            border-bottom: 2px solid var(--border); /* A structural line under the title */
+            padding-bottom: 15px;
+        }
+
+        .intro {
+            color: var(--text-muted);
+            font-size: 1.1rem;
+            margin-bottom: 40px;
+        }
+
+        /* Links */
+        a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
 	</head>
-	<body>
+	<body class="home">
 		<div class="wrapper">
-			<header class="container">
-				<a href="/"><h1 class="home-title">cengizhan.engineer</h1></a>
+			<header>
+				<h1 class="home-title">cengizhan.engineer</h1>
+				<p class="intro">An Aerospace Engineer</p>
 			</header>
-
-			<main class="container"><section class="content"><article>
-<h2><a href="/post/mite/index.html">Site generation with C templates</a></h2><div class="meta">2025-08-09</div><p>Site generation with C templates</p><div class="post-footer">
-<a href="/post/mite/index.html" class="read-more">Read more...</a><span class="tags">static site generator c template markdown</span></div></article><hr style="margin: 1.5rem; width: 65%; border: 0; border-top: 1px solid #f1f1f1;"><article>
-<h2><a href="/post/my-post/index.html">my post title</a></h2><div class="meta">2019-12-30</div><p>description here bro hello this is a long description yo this should takke more than one line to display at max width</p><div class="post-footer">
-<a href="/post/my-post/index.html" class="read-more">Read more...</a><span class="tags">math simulation</span></div></article></section>
-<aside class="sidebar">
-	<p class="about"><span class="ipa">/cengizhan/</span> "İstikbal göklerdedir" </p>
-	<div class="links">
-		<a href="https://github.com/">GitHub</a> 
-		<a href="https://bsky.app/">Bluesky</a> 
-		<a href="https://ko-fi.com/">Ko-fi</a> 
-	</div>
-        <hr class="hr-spacer">
-	<h3>Sidenotes</h3>
-	<div class="sidenote">
-		<a href="#">post?</a>
-		<div class="meta">October 25, 2023</div>
-		<p>description</p>
-	</div>
-        <hr class="hr-spacer">
-</aside>
-			</main><footer>
-	<p class="small">© 2025 Cengizhan Ermet - Powered by <a href="https://github.com/hanion/mite">mite</a></p>
+<h2>posts</h2>
+<ul class="post-list"><li>
+<time datetime="2026-01-20">2026-01-20</time> <a href="/post/another-post/index.html">another post title</a></li><li>
+<time datetime="2025-12-30">2025-12-30</time> <a href="/post/my-post/index.html">my post title</a></li></ul>
+<h2>usage</h2>
+<pre><code>
+$ cc -o mite mite.c &amp;&amp; ./mite
+</code></pre>
+<footer>
+	<p>
+			<a href="https://github.com/user">github</a> |
+			<a href="https://bsky.app/profile/user">bluesky</a> |
+			<a href="https://linkedin.com/user">linkedin</a> |
+		<a href="/rss.xml">rss</a>
+	</p>
 </footer>
 		</div>
 	</body>
