@@ -2,83 +2,28 @@
 <html lang="en">
 	<head>
 		<meta charset="UTF-8">
-		<title><? STR(page->title) ?></title>
-		<meta property=      "og:title" content="<? STR(page->title) ?>"/>
-		<? if (page->description) { ?>
-			<meta name=       "description" content="<? STR(page->description) ?>"/>
-			<meta property="og:description" content="<? STR(page->description) ?>"/>
-		<? } ?>
-		<style>
-        /* ENGINEERING THEME - TECHNICAL DARK */
-        :root {
-            --bg-color: #1a1b1e;       /* Deep Slate Grey (Like CAD software) */
-            --text-main: #e6e6e6;      /* Off-white for readability */
-            --text-muted: #a0a0a0;     /* Grey for less important text */
-            --accent: #4da6ff;         /* "Simulation Blue" */
-            --border: #333333;         /* Subtle borders */
-        }
-
-        body {
-            background-color: var(--bg-color);
-            color: var(--text-main);
-            font-family: 'Segoe UI', Helvetica, Arial, sans-serif; /* Clean reading font */
-            line-height: 1.6;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* The container that centers everything */
-        .wrapper {
-            max-width: 800px;     /* Not too wide, like a paper document */
-            margin: 0 auto;       /* Centers it */
-            padding: 40px 20px;
-        }
-
-        /* The Main Title - Uses a "Code" font for engineering feel */
-        .home-title {
-            font-family: 'Consolas', 'Courier New', monospace;
-            color: var(--accent);
-            font-size: 2.5rem;
-            margin-bottom: 10px;
-            border-bottom: 2px solid var(--border); /* A structural line under the title */
-            padding-bottom: 15px;
-        }
-
-        .intro {
-            color: var(--text-muted);
-            font-size: 1.1rem;
-            margin-bottom: 40px;
-        }
-
-        /* Links */
-        a {
-            color: var(--accent);
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-    </style>
+		<title><? STR(page->title) STR(" - ") STR(global.title) ?></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta name="description" content="<? STR(global.description) ?>">
+		<link rel="icon" type="image/png" href="<? STR(global.favicon_path) ?>"/>
+		<link rel="stylesheet" href="/asset/style.css">
 	</head>
 	<body>
 		<div class="wrapper">
-			<nav class="site-nav">
-				<div class="nav-left">
-					<a href="/"><? STR(global.title) ?></a>
-				</div>
-			</nav>
-
-
+			<a href="/"><h1 class="home-title"><? STR(global.title) ?></h1></a>
 			<header>
 				<h1><? STR(page->title) ?></h1>
-				<p class="date"><? STR(page->date) ?></p>
-				<p class="tags"><? STR(page->tags) ?></p>
+				<div class="meta">
+					<? STR(page->date) STR("   ") ?>
+					<div class="tags">
+					<? STR(page->tags) ?>
+					</div>
+				</div>
 			</header>
 
 			<main class="content">
 				<? CONTENT() ?>
 			</main>
-
 			<? INCLUDE("footer") ?>
 		</div>
 	</body>

@@ -1,36 +1,44 @@
 ```c
-global.url = "https://cengizhan.engineer";
-global.title = "cengizhan.engineer";
-global.description = "An Aerospace Engineer";
+/*
+./mite --serve
+http://localhost:8000/
+*/
+
+global.url           = "https://cengizhan.engineer";
+global.title         = "cengizhan.engineer";
+global.description   = "An Aerospace Engineer";
+global.favicon_path  = "/asset/favicon.png";
+
+
+ADD_PROJECT("bitirme projesi", "bir şeyler yaptım", "/proje/bitirme");
+ADD_PROJECT("ikinci proje", "açıklama", "/post/ikinci_proje_postu");
+
+ADD_SOCIAL("github", "https://github.com/");
+ADD_SOCIAL("linkedin", "https://linkedin.com/");
 
 page->layout = "home";
-
-ADD_PROJECT("project1", "desc1", "/project/project1_url");
-ADD_PROJECT("project2", "desc2", "/project/project2_url");
-
-ADD_SOCIAL("github", "https://github.com/user");
-ADD_SOCIAL("bluesky", "https://bsky.app/profile/user");
-ADD_SOCIAL("linkedin", "https://linkedin.com/user");
 ```
 
-<? if (global.posts.count > 0) { ?>
-## posts
+<? sort_pages(&global.posts); ?>
 
-<ul class="post-list">
-    <? sort_pages(&global.posts); ?>
-    <? for (int i = 0; i < global.posts.count; ++i) { ?>
-        <?     SitePage* p = global.posts.items[i]; ?>
-        <?     if ((p->date) && *(p->date) == '0') continue; ?>
-        <li>
-            <time datetime="<? STR(p->date); ?>"><? STR(p->date); ?></time> 
-            <a href="<? STR(p->url); ?>"><? STR(p->title); ?></a>
-        </li>
-        <? } ?>
-</ul>
+<section class="content">
+
+<? for (int i = 0; i < global.posts.count; i++) { ?>
+<?     SitePage* p = global.posts.items[i]; ?>
+<article>
+    <h2><a href="<? STR(p->url) ?>"><? STR(p->title) ?></a></h2>
+    <div class="meta"><? STR(p->date) ?></div>
+    <p><? STR(p->description) ?></p>
+    <div class="post-footer">
+        <a href="<? STR(p->url) ?>" class="read-more">Read more...</a>
+        <span class="tags"><? STR(p->tags) ?></span>
+    </div>
+</article>
+    <? if (i != global.posts.count - 1) { ?>
+        <hr style="margin: 1.5rem; width: 65%; border: 0; border-top: 1px solid #f1f1f1;">
+    <? } ?>
 <? } ?>
 
+</section>
 
-## usage
-```sh
-$ cc -o mite mite.c && ./mite
-```
+
