@@ -13,17 +13,14 @@
 			<a href="/"><h1 class="home-title">cengizhan.engineer</h1></a>
 			<header>
 				<h1>What I’ve Learned From My FEM Course</h1>
-				<div class="meta">2026-01-20   
-					<div class="tags">tag1 tag2 tag3
+				<div class="meta">   
+					<div class="tags">ANSYS, FEA, Static Structural
 					</div>
 				</div>
 			</header>
 
-			<main class="content">
-<p>
-<strong>Notice regarding visual data:</strong> <i>&quot;Due to university and project confidentiality restrictions, all original CAD images, mesh displays, and simulation results have been redacted from this portfolio. The text below accurately reflects my exact methodology, solver setups, and analysis workflows. I am currently in the process of re-running these analyses on open-source, non-proprietary geometry and will update this page with the new visual data soon.&quot;</i>
-</p>
-
+			<main class="content"><hr><blockquote><strong>Notice regarding visual data:</strong> <i>Due to university and project confidentiality restrictions, all original CAD images, mesh displays, and simulation results have been redacted from this portfolio. The text below accurately reflects my exact methodology, solver setups, and analysis workflows. I am currently in the process of re-running these analyses on open-source, non-proprietary geometry and will update this page with the new visual data soon.</i></blockquote>
+<hr>
 <p>
 Throughout my Finite Element Method (FEM) course, I progressed from basic static structural simulations to complex multi-body rigid dynamics using ANSYS. Below is a showcase of my key learnings and the progression of my simulation skills.
 </p>
@@ -33,11 +30,10 @@ Throughout my Finite Element Method (FEM) course, I progressed from basic static
 <p>
 For my first static structural analysis, I calculated the stress concentration and reaction forces on a simple rectangular plate with a central hole.
 </p>
-<figure>
-	<img src="attachment:ce7fa1a9-1882-4cd9-8e31-ac20d43fc1e7:image.png" loading="lazy" alt="image.png">
-	<figcaption>image.png</figcaption>
-</figure>
-
+<div align="center">
+<img src="image-fea.png" alt="Static and Buckling Schematic" width="35%">
+<p style="font-size: 0.9em; margin-top: 5px; opacity: 0.8;">
+<em>Figure 1: Initial project schematic for Static and Buckling analysis.</em></p></div>
 <p>
 Next, I linked multiple analysis systems in Workbench.
 I used Modal analysis to determine natural frequencies and Eigenvalue Buckling analysis to find the critical loads.
@@ -71,7 +67,7 @@ Moving beyond basic contacts, I needed to simulate real-world motion. I defined 
 To evaluate internal component interactions, I analyzed a caster wheel assembly. I used <strong>c</strong>ross-section views to visualize the total deformation and contact behavior between the axle, bearings, and wheel housing under static loading.
 </p>
 
-<h3>Rigid Body Dynamics</h3>
+<h2>Rigid Body Dynamics</h2>
 
 <p>
 I modeled a three-link mechanism using the Rigid Dynamics module to evaluate its kinematic behaviour. I defined revolute joints and a point mass, then applied a rotational velocity motor to simulate the system's motion. Finally, I used a Joint Probe to extract the required torque data over time.
@@ -82,11 +78,10 @@ I modeled a three-link mechanism using the Rigid Dynamics module to evaluate its
 <p>
 For my final project, I’ve completed Modal, Random Vibration, and Transient Shock analysis on a Console Desk assembly. 
 </p>
-<figure>
-	<img src="attachment:6cbb5415-772d-4268-aebf-24c53d12c819:image.png" loading="lazy" alt="image.png">
-	<figcaption>image.png</figcaption>
-</figure>
-
+<div align="center">
+<img src="image-fea2.png" alt="Multi-body Rigid Dynamics Workflow" width="50%">
+<p style="font-size: 0.9em; margin-top: 5px; opacity: 0.8;">
+<em>Figure 2: Complex multi-body rigid dynamics and vibration workflow.</em></p></div>
 <p>
 I optimized the model for better run times by midsurfacing, switching to shell elements, and using deformable beams for the bolt connections.
 </p>

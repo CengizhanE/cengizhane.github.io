@@ -88,7 +88,8 @@ margin: 0;
 background: rgba(16, 27, 48, 0.65);
 border: 1px solid var(--border);
 border-radius: var(--border-radius);
-padding: 1.15rem;
+padding: 1.5rem;
+margin-top: 1rem;
 }
 
 .content article {
@@ -135,8 +136,8 @@ background: rgba(99, 179, 237, 0.18);
 border-radius: 999px;
 color: #d5e8ff;
 font-size: 0.8rem;
-margin-right: 0.4rem;
-padding: 0.25rem 0.55rem;
+margin-right: 0.6rem;
+padding: 0.35rem 0.7rem;
 }
 
 .read-more,
@@ -195,6 +196,21 @@ color: var(--text);
 font-weight: 500;
 }
 
+.resume-btn {
+    display: inline-block;
+    padding: 8px 16px;
+    margin-top: 10px;
+    border: 1px solid #3b82f6; 
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+}
+
+.resume-btn:hover {
+    background-color: rgba(206, 246, 59, 0.1); 
+} 
+
 footer {
 text-align: center;
 margin-top: 1rem;
@@ -229,3 +245,4 @@ grid-template-columns: 1fr;
 .wrapper { max-width: 90vw; padding: 0.85rem; }
 header.container { flex-direction: column; gap: 0.6rem; }
 }
+
