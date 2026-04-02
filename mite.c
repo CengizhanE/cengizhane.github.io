@@ -1,5 +1,13 @@
 /* mite 1.4.3
 
+
+
+./mite --serve
+
+http://localhost:8000/
+
+
+
 [mite](https://github.com/hanion/mite)
 
 MInimal TEmplated static site generator with C templates
