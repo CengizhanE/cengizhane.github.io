@@ -1,15 +1,13 @@
 <aside class="sidebar">
     <p class="about"><span class="ipa">/cengizhan/</span> "<? STR(global.description) ?>" </p>
     <div class="links">
-        <a href="https://www.linkedin.com/in/cengizhan-ermet-234014200/">LinkedIn</a>
-        <a href="https://bsky.app/">Bluesky</a>
-        <a href="https://ko-fi.com/">Ko-fi</a>
+        <a href="https://www.linkedin.com/in/cengizhan-ermet-234014200/">>My LinkedIn</a>
     </div>
     <hr class="hr-spacer">
     
     <h3>Current Status</h3>
     <div class="sidenote">
-        <p><b>Role:</b> Mechanical Team Leader @ Momentum Rocket Team (Teknofest)</p>
+        <p><b>Role:</b> Mechanical Team Member @ Momentum Rocket Team (Teknofest)</p>
         <p><b>Status:</b> Actively seeking Summer 2026 Aerospace Internships</p>
         <a href="/asset/Resume_English.pdf" target="_blank" class="resume-btn">Download Resume</a>
     </div>
