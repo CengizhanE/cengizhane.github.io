@@ -23,6 +23,8 @@ page->layout = "home";
 
 <section class="content">
 
+<h2 class="section-heading">technical logs</h2>
+
 <? for (int i = 0; i < global.posts.count; i++) { ?>
 <?     SitePage* p = global.posts.items[i]; ?>
 <article>
