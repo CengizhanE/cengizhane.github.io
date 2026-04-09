@@ -7,6 +7,20 @@
 		<meta name="description" content="An Aerospace Engineer">
 		<link rel="icon" type="image/png" href="/asset/favicon.png"/>
 		<link rel="stylesheet" href="/asset/style.css">
+		<script type="text/javascript" async
+  		src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_CHTML">
+		</script>
+
+		<script type="text/x-mathjax-config">
+  		MathJax.Hub.Config({
+    	tex2jax: {
+      	inlineMath: [['$','$'], ['\\(','\\)']],
+      	processEscapes: true
+
+    }
+  });
+</script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/vs2015.min.css">
 	</head>
 	<body>
 		<div class="wrapper">
@@ -119,8 +133,18 @@ A huge thank you to my lecturer, Burak Özcan. This was easily the best and most
 </p>
 
 			</main><footer>
-	<p class="small">© 2025 Cengizhan Ermet - Powered by <a href="https://github.com/hanion/mite">mite</a></p>
+    <p class="small">© 2026 Cengizhan Ermet - Powered by <a href="https://github.com/hanion/mite">mite</a></p>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/matlab.min.js"></script>
+<script>
+  // Find all code blocks, force them to be MATLAB, and highlight them
+  document.querySelectorAll('pre code').forEach((block) => {
+    block.classList.add('language-matlab');
+    hljs.highlightElement(block);
+  });
+</script>
 		</div>
 	</body>
 </html>

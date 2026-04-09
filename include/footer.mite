@@ -1,3 +1,13 @@
 <footer>
-	<p class="small">© 2025 Cengizhan Ermet - Powered by <a href="https://github.com/hanion/mite">mite</a></p>
+    <p class="small">© 2026 Cengizhan Ermet - Powered by <a href="https://github.com/hanion/mite">mite</a></p>
 </footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/matlab.min.js"></script>
+<script>
+  // Find all code blocks, force them to be MATLAB, and highlight them
+  document.querySelectorAll('pre code').forEach((block) => {
+    block.classList.add('language-matlab');
+    hljs.highlightElement(block);
+  });
+</script>

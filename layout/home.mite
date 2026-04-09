@@ -13,6 +13,7 @@
 		<link rel="stylesheet" href="/asset/style.css"/>
 
 		<link rel="alternate" type="application/rss+xml" title="<? STR(global.title) ?> rss feed" href="/rss.xml" />
+		
 	</head>
 	<body>
 		<div class="wrapper">

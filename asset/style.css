@@ -246,3 +246,30 @@ grid-template-columns: 1fr;
 header.container { flex-direction: column; gap: 0.6rem; }
 }
 
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid #444;
+}
+
+table th, table td {
+    padding: 12px;
+    border: 1px solid #444;
+    text-align: left;
+}
+
+table th {
+    background-color: #222; /* Darker header */
+    color: #fff;
+}
+
+:not(pre) > code {
+    background-color: #2d2d2d; /* Dark background */
+    color: #f07178;            /* Pinkish-red text */
+    padding: 3px 6px;
+    border-radius: 4px;
+    font-family: 'Consolas', 'Monaco', monospace;
+    font-size: 0.9em;
+}
