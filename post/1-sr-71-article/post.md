@@ -3,7 +3,7 @@ page->layout = "post";
 page->title  = "SR-71 Blackbird Supersonic Inlet — CFD Analysis";
 
 page->tags   = "Shock-on-Lip Capture at Mach 3.2, ANSYS Fluent, 2D Axisymmetric, SR-71";
-page->desc   = "Summary will be here";
+page->desc   = "A 2D axisymmetric CFD analysis of the SR-71 inlet at 80,000 ft, capturing zero-spillage shock dynamics and validating historical titanium airframe requirements.";
 SET_POST();
 ```
 
