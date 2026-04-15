@@ -293,3 +293,27 @@ table th {
     border-bottom: 1px solid var(--border); /* This syncs the line with your new dark theme */
     padding-bottom: 10px;
 }
+
+.badge-rank, .badge-in-progress {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 28px; /* Locks the height. Adjust up or down if needed */
+    padding: 0 10px;
+    border-radius: 4px;
+    font-size: 0.85em;
+    box-sizing: border-box;
+    white-space: nowrap;
+}
+
+.badge-rank {
+    background-color: rgba(56, 189, 248, 0.15); 
+    color: #38bdf8; 
+    border: 1px solid rgba(56, 189, 248, 0.3); 
+}
+
+.badge-in-progress {
+    background-color: rgba(52, 211, 153, 0.15); /* Adjust to your exact green */
+    color: #34d399; /* Adjust to your exact green */
+    border: 1px solid rgba(52, 211, 153, 0.3); 
+}
