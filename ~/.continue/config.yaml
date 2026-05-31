@@ -1,0 +1,17 @@
+version: 1
+
+models:
+  - name: Qwen Coder 7B
+    provider: ollama
+    model: qwen2.5-coder:7b
+    apiBase: http://127.0.0.1:11434
+    roles:
+      - chat
+      - edit
+      - apply
+
+tabAutocompleteModel:
+  name: Qwen Coder 1.5B
+  provider: ollama
+  model: qwen2.5-coder:1.5b
+  apiBase: http://127.0.0.1:11434
