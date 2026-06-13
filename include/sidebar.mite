@@ -1,7 +1,7 @@
 <aside class="sidebar">
     <p class="about"><span class="ipa">/cengizhan/</span> "<? STR(global.description) ?>" </p>
     <div class="links">
-        <a href="https://www.linkedin.com/in/cengizhan-ermet-234014200/">>My LinkedIn</a>
+        <a href="https://www.linkedin.com/in/cengizhan-ermet/">>My LinkedIn</a>
     </div>
     <hr class="hr-spacer">
 
