@@ -6,7 +6,7 @@ http://localhost:8000/
 
 global.url           = "https://cengizhan.engineer";
 global.title         = "cengizhan.engineer";
-global.description   = "An Aerospace Engineer";
+global.description   = "An Astronautical Engineer @ITU";
 global.favicon_path  = "/asset/favicon.png";
 
 

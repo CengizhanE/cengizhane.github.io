@@ -7,23 +7,12 @@
 
     <h3>Current Status</h3>
     <div class="sidenote">
-        <p><b>Role:</b> Mechanical Team @ Momentum Rocket Team (Teknofest)</p>
+        <p><b>Role:</b> Mechanical Team @ Momentum Rocket Team</p>
         <p style="margin-top: 8px; margin-bottom: 12px; display: flex; gap: 8px;">
-            <span class="badge-rank">2026 PDR: 9th</span>
-            <span class="badge-rank">2026 CDR: Qualified</span>
+            <span class="badge-rank">2026 Teknofest Finalist</span>
         </p>
         <a href="/asset/Resume_English.pdf" target="_blank" class="resume-btn">Download Resume</a>
     </div>
-    <hr class="hr-spacer">
-
-    <h3>Active Projects</h3>
-    <div class="sidenote">
-    <p>> Meshless.ai <span class="badge-in-progress">In progress</span></p>
-    </div>
-
-    <a href="https://meshless.cengizhan.engineer" target="_blank" class="resume-btn">View App</a>
-
-
     <hr class="hr-spacer">
 
     <h3>Technical Stack</h3>
