@@ -1,5 +1,5 @@
 <aside class="sidebar">
-    <p class="about"><span class="ipa">/cengizhan/</span> "<? STR(global.description) ?>" </p>
+    <p class="about"> <? STR(global.description) ?> </p>
     <div class="links">
         <a href="https://www.linkedin.com/in/cengizhan-ermet/">>My LinkedIn</a>
     </div>
@@ -9,9 +9,9 @@
     <div class="sidenote">
         <p><b>Role:</b> Mechanical Team @ Momentum Rocket Team</p>
         <p style="margin-top: 8px; margin-bottom: 12px; display: flex; gap: 8px;">
-            <span class="badge-rank">2026 Teknofest Finalist</span>
+            <span class="badge-rank">2026 TEKNOFEST Finalist</span>
         </p>
-        <a href="/asset/Resume_English.pdf" target="_blank" class="resume-btn">Download Resume</a>
+        <a href="/asset/Resume_2026.pdf" target="_blank" class="resume-btn">Download Resume</a>
     </div>
     <hr class="hr-spacer">
 
